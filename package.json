@@ -2,13 +2,13 @@
   "name": "equality-bank-front",
   "version": "0.0.0",
   "scripts": {
-    "start": "http-server",
+    "start": "http-server equality-bank-front",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor",
     "preinstall": "npm install -g http-server",
-    "postinstall": "ng build && mv dist/* ."
+    "postinstall": "ng build --prod && mv dist/* ."
   },
   "private": true,
   "dependencies": {
